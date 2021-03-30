@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "cac896d8-e584-4f3e-8c36-6d2ebe123ed2",
+		"name": "telegram",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "qwaszxe",
+							"type": "text"
+						},
+						{
+							"key": "login",
+							"value": "Skukys",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "Http://betterthentelegram/api/login",
+					"protocol": "Http",
+					"host": [
+						"betterthentelegram"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "8d664d7f-e423-4f1b-a1e3-dd069958d2fc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "Http://betterthentelegram/api/logout",
+					"protocol": "Http",
+					"host": [
+						"betterthentelegram"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2f7f64d0-af87-4fcd-9883-76b65fbcc5b8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "Http://betterthentelegram/api/info",
+					"protocol": "Http",
+					"host": [
+						"betterthentelegram"
+					],
+					"path": [
+						"api",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "Http://betterthentelegram/api/search",
+					"protocol": "Http",
+					"host": [
+						"betterthentelegram"
+					],
+					"path": [
+						"api",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "first massage",
+							"type": "text"
+						},
+						{
+							"key": "receiver",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "sender",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "Http://betterthentelegram/api/send",
+					"protocol": "Http",
+					"host": [
+						"betterthentelegram"
+					],
+					"path": [
+						"api",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get chats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "All messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
